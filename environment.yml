@@ -1,0 +1,25 @@
+    1 name: RecSysPD
+    2 channels:
+      - conda-forge
+    4 dependencies:
+      - python=3.8
+      - cython
+      - h5py
+      - nltk
+      - nose
+      - numpy
+     - pandas
+     - scikit-learn
+     - scipy
+     - networkx
+     - tqdm
+     - pytables
+   
+    # PyTorch and torchvision (optimized for M1 using the Metal backend)
+     - pytorch
+     - torchvision
+   
+     # LightFM, scikit-optimize, and matplotlib from conda-forge
+     - lightfm
+     - scikit-optimize
+     - matplotlib
