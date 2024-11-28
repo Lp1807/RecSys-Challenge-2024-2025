@@ -88,7 +88,7 @@ def split_train_in_two_percentage_user_wise(URM_train, train_percentage = 0.1, v
 
 
 
-def split_train_in_two_percentage_global_sample(URM_all, train_percentage = 0.1):
+def split_train_in_two_percentage_global_sample(URM_all, train_percentage = 0.1, seed = 42):
     """
     The function splits an URM in two matrices selecting the number of interactions globally
     :param URM_all:
@@ -109,6 +109,7 @@ def split_train_in_two_percentage_global_sample(URM_all, train_percentage = 0.1)
 
 
     URM_train = sps.coo_matrix(URM_all)
+    np.random.seed(seed)
 
     indices_for_sampling = np.arange(0, URM_all.nnz, dtype=np.int32)
     np.random.shuffle(indices_for_sampling)
