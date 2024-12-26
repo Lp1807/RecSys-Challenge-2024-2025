@@ -131,3 +131,6 @@ slides/**
 
 #Dataset since heavy
 Dataset/**
+
+#NPZ
+*.npz
