@@ -6,6 +6,7 @@ Created on 30/03/2019
 @author: Maurizio Ferrari Dacrema
 """
 import sys, glob, traceback, os
+os.chdir("../")
 from CythonCompiler.run_compile_subprocess import run_compile_subprocess
 
 if __name__ == '__main__':
@@ -19,7 +20,6 @@ if __name__ == '__main__':
         "Recommenders/FeatureWeighting",
         "Utils/PyTorch",
     ]
-
 
     cython_file_list = []
 
