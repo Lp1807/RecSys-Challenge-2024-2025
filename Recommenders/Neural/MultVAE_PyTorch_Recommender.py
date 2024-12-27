@@ -408,4 +408,3 @@ class MultVAERecommender_PyTorch_OptimizerMask(MultVAERecommender_PyTorch):
         super(MultVAERecommender_PyTorch_OptimizerMask, self).fit(epochs=epochs, batch_size=batch_size, dropout=dropout, learning_rate=learning_rate,
                 total_anneal_steps=total_anneal_steps, anneal_cap=anneal_cap, p_dims=p_dims, l2_reg=l2_reg, sgd_mode=sgd_mode,
                 **earlystopping_kwargs)
-
