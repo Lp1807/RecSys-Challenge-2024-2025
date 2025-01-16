@@ -5,6 +5,7 @@
 <p align="center">
     <img src="https://i.imgur.com/mPb3Qbd.gif" width="180" alt="Politecnico di Milano"/>
 </p>
+
 This repo contains the code and the data used in the [Polimi's Recsys Challenge 2024](https://www.kaggle.com/competitions/recommender-system-2024-challenge-polimi)
 <br>
 The goal of the competition was to create a recommender system for books, providing 10 recommendations for each user.
@@ -28,7 +29,7 @@ The evaluation metric for this competition was MAP@10.
 
 # Recommender
 <p align="center">
-  <img width="100%" src="images/recommender.png" alt="header" />
+  <img width="100%" src="images/recommender_nontransparent.png" alt="header" />
 </p>
 Our best recommender is a hybrid composed of
 * SLIM ElasticNet
