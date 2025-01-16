@@ -31,6 +31,7 @@ The evaluation metric for this competition was MAP@10.
 <p align="center">
   <img width="100%" src="images/recommender_nontransparent.png" alt="header" />
 </p>
+
 Our best recommender is a hybrid composed of
 * SLIM ElasticNet
 * RP3Beta
@@ -39,18 +40,8 @@ Our best recommender is a hybrid composed of
 Some interesting notebooks can be found in [Notebooks](/MyNotebooks)
 
 ## Hyperparameter Tuning
-Hyperparameter tuning played a pivotal role in enhancing the performance of our recommender system. To achieve this, we leveraged Optuna for its efficient optimization capabilities. Initially, 80% of the user-interaction dataset was used to conduct multiple Optuna runs. Once an approximate range of optimal solutions was identified, we refined the hyperparameter space and restarted the trials, accelerating convergence while maintaining precision. Additionally, whenever feasible within the constraints of time and computational resources, k-fold cross-validation was employed to further validate the robustness and reliability of the tuned hyperparameters.
+Hyperparameter tuning played a pivotal role in enhancing the performance of our recommender system. To achieve this, we leveraged Optuna for its efficient optimization capabilities.
 
-<!-- ## Explored models
-A full range of models was explored and some in the local  -->
-
-<!-- ## Exploring XGBoost
-
-In our pursuit of maximizing performance, we explored the possibility of integrating XGBoost into our recommender system. This endeavor involved retraining all our models and optimizing them for Recall@25 instead of MAP@10, aiming to leverage the strengths of XGBoost for improved recommendation accuracy. However, despite our efforts, we consistently obtained inferior results compared to our baseline hybrid model. This outcome suggests that we may have made some mistakes in the implementation or parameter tuning of the XGBoosted model. Nevertheless, this experience has provided valuable insights, and we remain commited to revisiting and refining the XGBoosted model in the future. An updated and correct version of the XGBoosted model may emerge in the coming months, reflecting our ongoing commitment to enhancing the performance and robustness of our recommender system. -->
-
-<!-- ## Team
-* [Jacopo Piazzalunga](https://github.com/Jacopopiazza)
-* [Davide Salonico](https://github.com/DavideSalonico) -->
-
+Initially, 80% of the user-interaction dataset was used to conduct multiple [Optuna](https://optuna.org/) runs. Once an approximate range of optimal solutions was identified, we refined the hyperparameter space and restarted the trials, accelerating convergence while maintaining precision. Additionally, whenever feasible within the constraints of time and computational resources, k-fold cross-validation was employed to further validate the robustness and reliability of the tuned hyperparameters.
 ## Credits
 This repository is based on [Official Polimi Recommender Systems repository](https://github.com/recsyspolimi/RecSys_Course_AT_PoliMi)
