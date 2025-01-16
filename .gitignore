@@ -134,3 +134,9 @@ Dataset/**
 
 #NPZ
 *.npz
+
+# DS_Store
+.DS_Store
+
+# XGBOOST 
+MyNotebooks/xgboost_tentativo_disperato.ipynb
